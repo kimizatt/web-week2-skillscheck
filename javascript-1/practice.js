@@ -91,11 +91,15 @@ const me = {
 	firstName: "Kim",
 	state: "Utah",
 	age: 45,
-	greeter: ''
+	greeter: function() {
+		return `Hello! My name is${name}and I live in${state}`
+	}
 }
-for(let[key, value] of Object.entries(me)) {
-	me.greeter = `Hello! My name is${me.firstName}and I live in ${me.state}`
-}
+
+
+// for(let[key, value] of Object.entries(me)) {
+// 	me.greeter = `Hello! My name is${me.firstName}and I live in ${me.state}`
+// }
 // COMMENT:  COULDN'T GET THIS TO WORK BUT TRIED A FEW DIFFERENT THINGS. 
 // let name = me.firstName
 // let state = me.state

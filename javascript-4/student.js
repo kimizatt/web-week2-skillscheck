@@ -27,9 +27,13 @@ const me = {
     superHeroName: 'Kalypso Kim',
     homeTown: 'Manassa',
     superPowers: ['teaching math', 'making pottery', 'trick paddleboarding'],
-    superPowerXP: Math.floor(Math.random()*100) +1,
-    profileImage: "https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg"
+    superPowerXP: function() {
+        return Math.floor(Math.random()*100) +1},
+
+    profileImage: function() {
+        return `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`}
 }
+"https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg"
 //////////////////Step 3////////////////////
 // Create three variables to hold some data off your me object. The first variable should be 'regularName' that is the value of your firstName on the me object. The next variable is 'superName' which is the value of superHeroName on the me object. Last is 'homeTown' which will be the value of homeTown on the me object
 
@@ -67,6 +71,12 @@ function setPowers(arr) {
 //////////////////Step 6////////////////////
 //Lastly, create a function called redactInfo that will take in an obj as a paramter. Let's imagine our super hero needs to go undercover and we need to remove all info about them. That is what this function will do. Loop over the object and change each keys value to 'redacted'. Outside of the loop but still in the redactInfo function, run the function redacted() which is a function we created that will update the text on the screen.
 
+const redactInfo = function(obj) {
+    Object.keys(obj).forEach(function(key){ obj[key] = 'redacted'})
+    return obj
+}
+//Note:  I got the above code form StackFlow.  I couldn't have come up with it myself.  I don't know if it works though
+// because I can't get past the profileImage thing.
 // CODE HERE
 // function redactInfo(obj) {
 //     for(let i=0; i< 7; i++) {
