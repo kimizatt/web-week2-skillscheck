@@ -1,0 +1,99 @@
+#navbar {
+    height: 45px;
+    background: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#logo-container {
+    width: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+    justify-content: space-between;
+    margin: 12px 0 0 40px;
+}
+#menu {
+    width: 25%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#top-container {
+    height: 28vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    width: 425px;
+    height: 100px;
+    color: rgb(248, 235, 56);
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 48px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin-top: 30px;
+}
+#bottom-section {
+    height: 60vh;
+}
+.box-container {
+    width: 90%;
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto 0;
+}
+.green-box {
+    width: 165px;
+    height: 165px;
+    background: rgb(168, 241, 211);
+    border-radius: 10%;
+}
+.orange-box {
+    width: 300px;
+    height: 150px;
+    background: rgb(238, 177, 64);
+    
+} 
+#bottom-box-container {
+    width: 70%;
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+.text-box {
+    width: 250px;
+    height: 125px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    color: black;
+} 
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    color: black;    
+}
+.image-box {
+    width: 200px;
+    height: 100px;
+    
+}
+
+footer {
+    height: 100px;
+    background: rgb(36, 33, 68);
+}
